@@ -13,7 +13,7 @@
 
 # Prevent file overwrite on stdout redirection
 # Use `>|` to force redirection to an existing file
-set -o noclobber
+#set -o noclobber
 
 # Update window size after every command
 shopt -s checkwinsize
