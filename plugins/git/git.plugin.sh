@@ -239,8 +239,8 @@ alias gfo='command git fetch origin'
 # alias gfa='git fetch --all --prune --jobs=10' \
 __git_complete gfo _git_fetch
 
-alias gg='command git gui citool'
-alias gga='command git gui citool --amend'
+#alias gg='command git gui citool'
+#alias gga='command git gui citool --amend'
 
 alias ghh='command git help'
 __git_complete ghh _git_help
