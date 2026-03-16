@@ -38,12 +38,13 @@ GIT_THEME_PROMPT_SUFFIX=""
 
 # ICONS =======================================================================
 
-icon_start="┌"
-icon_user="💁  "
-icon_host=" @ 💻  "
-icon_directory=" in 📁  "
+icon_start="╭╴"
+icon_time="🕒"
+icon_user=" 💁"
+icon_host="@"
+icon_directory=" in 📁 "
 icon_branch="🌿"
-icon_end="└❯ "
+icon_end="╰-> "
 
 # extra spaces ensure legiblity in prompt
 
@@ -64,6 +65,7 @@ function winname {
 # Displays the current prompt
 function _omb_theme_PROMPT_COMMAND() {
   PS1='\n'$icon_start$(_omb_prompt_print_python_venv)
+  PS1+=$icon_time'\t'
   PS1+=$icon_user$_omb_prompt_bold_brown'\u'
   PS1+=$_omb_prompt_normal$icon_host$_omb_prompt_bold_teal'\h'
   PS1+=$_omb_prompt_normal$icon_directory$_omb_prompt_bold_purple'\W'
