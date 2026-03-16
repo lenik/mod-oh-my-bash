@@ -241,16 +241,16 @@ if [[ ${ZSH_VERSION-} ]]; then
   compctl -K _bashmarks_compzsh_cmd_bm bm -d
   compctl -K _bashmarks_compzsh_cmd_bm g
   compctl -K _bashmarks_compzsh_cmd_bm p
-  compctl -K _bashmarks_compzsh_cmd_bm d
+  compctl -K _bashmarks_compzsh_cmd_bm D
 else
   shopt -s progcomp
   complete -F _bashmarks_comp_cmd_bm bm
   complete -F _bashmarks_comp_cmd_bm g
   complete -F _bashmarks_comp_cmd_bm p
-  complete -F _bashmarks_comp_cmd_bm d
+  complete -F _bashmarks_comp_cmd_bm D
 fi
 
 alias s='bm -a'       # Save a bookmark [bookmark_name]
 alias g='bm -g'       # Go to bookmark [bookmark_name]
 alias p='bm -p'       # Print bookmark of a path [path]
-alias d='bm -d'       # Delete a bookmark [bookmark_name]
+alias D='bm -d'       # Delete a bookmark [bookmark_name]
