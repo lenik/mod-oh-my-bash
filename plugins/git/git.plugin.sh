@@ -441,8 +441,8 @@ alias grv='command git remote --verbose'
 __git_complete grv _git_remote
 
 alias gpristine='command git reset --hard && command git clean --force -dfx'
-alias grh='command git reset'
-__git_complete grh _git_reset
+#alias grh='command git reset'
+#__git_complete grh _git_reset
 alias grhh='command git reset --hard'
 __git_complete grhh _git_reset
 alias grhk='command git reset --keep'
